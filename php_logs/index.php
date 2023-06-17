@@ -28,15 +28,12 @@
         </div>
 
         <div class="allbtns">
-            <a href="alluser.php"><button type="button"><i class="fas fa-users"></i> ALL USERS &nbsp;&nbsp;&nbsp; </button></a>
             <a href="create_user.php"><button type="button"><i class="fas fa-user"></i> CREATE USER &nbsp;&nbsp;&nbsp; </button></a>
             <a href="transfer_money.php"><button type="button"><i class="fas fa-hand-holding-usd"></i> TRANSFER MONEY &nbsp;&nbsp;&nbsp; </button></a>
             <a href="Transfer_log.php"><button type="button"><i class="fas fa-history"></i> TRANSACTION LOG &nbsp;&nbsp;&nbsp; </button></a>
         </div>
 
     </div>
-
-    <?php include 'footer.php'; ?>
    
     <script src="navscroll.js"></script>
 </body>

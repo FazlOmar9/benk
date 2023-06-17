@@ -15,7 +15,6 @@
     <div class="menu" id="menu"> 
         <ul>
             <li><a id="home" href="index.php">Home</a></li>
-            <li><a id="home" href="alluser.php">All Users</a></li>
             <li><a id="home" href="create_user.php">Create User</a></li>
             <li><a id="home" href="transfer_money.php">Transfer Money</a></li>
             <li><a id="home" href="Transfer_log.php">Transaction Log</a></li>

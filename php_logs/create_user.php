@@ -57,9 +57,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="create">
         <h1>CREATE &nbsp; USER</h1>
         <div class="createUser">
-            <div class="userimg">
-                <img src="images/undraw_male_avatar_323b.svg" alt="user image">
-            </div>
             <div class="userdata">
                 
                 <form method="POST">
@@ -73,7 +70,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
 
-    <?php include 'footer.php' ?>
     
     <script src="navscroll.js"></script>
 </body>
