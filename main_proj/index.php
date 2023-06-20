@@ -9,6 +9,7 @@
   <style>
     body {
       background-color: #f8f9fa;
+      background-image: url('images/im-663680.jpeg')
     }
 
     .container {
@@ -53,6 +54,7 @@
 </head>
 
 <body>
+    <!-- <img src="images/im-663680.jpeg" alt="helloworld"> -->
     <?php include 'navbar.php'; ?>
     <div class="container">
     <div class="row">

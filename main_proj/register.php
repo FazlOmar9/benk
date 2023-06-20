@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="register.css">
   <title>Register Portal</title>
+  <style>
+    body {
+        background-image: url('images/im-663680.jpeg');
+    }
+  </style>
 </head>
 
 <body>
@@ -172,7 +177,7 @@
         }
         
         function submitForm() {
-            var accountNumber = '<?php $accountNumber; ?>';
+            var accountNumber = '<?php echo $accountNumber; ?>';
 
             // Perform form submission logic here
             alert('Form submitted successfully!');

@@ -16,12 +16,12 @@
   <style>
     /* Custom CSS */
     .navbar {
-      background-color: transparent;
+      background-color: rgba(0,0,0,0.8);
     }
     
     .navbar-brand {
       margin-right: auto;
-      color: black; /* Set logo font color to black */
+      color: white; /* Set logo font color to black */
       font-size: 30px; /* Increase or decrease the font size for the logo */
     }
     
@@ -30,11 +30,11 @@
     }
     
     .navbar-light .navbar-brand {
-      color: black; /* Set logo font color to black */
+      color: white; /* Set logo font color to black */
     }
     
     .navbar-light .navbar-nav .nav-link {
-      color: black; /* Set button font color to black */
+      color: white; /* Set button font color to black */
       font-size: 18px; /* Increase or decrease the font size for the buttons */
       margin-left: 15px; /* Increase or decrease the distance between buttons */
     }
