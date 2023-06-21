@@ -69,13 +69,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="images/lifeinsurance.png" class="d-block w-100" alt="Image 1">
+                <img src="images/lifeins.png" class="d-block w-100" alt="Image 1">
                 </div>
                 <div class="carousel-item">
-                <img src="images/lifeinsurance.png" class="d-block w-100" alt="Image 2">
+                <img src="images/lifeins.png" class="d-block w-100" alt="Image 2">
                 </div>
                 <div class="carousel-item">
-                <img src="images/lifeinsurance.png" class="d-block w-100" alt="Image 3">
+                <img src="images/lifeins.png" class="d-block w-100" alt="Image 3">
                 </div>
             </div>
             </div>
@@ -95,7 +95,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
             </form><br>
-            <a href="register.php">Not registered? Click here</a>
+            <p>Not registered? <a href="register.php">Register</a></p>
         </div>
         </div>
     </div>
