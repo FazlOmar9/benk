@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <style>
     body {
-      background-color: #f8f9fa;
       background-image: url('images/im-663680.jpeg')
     }
 
@@ -84,16 +83,16 @@
         <div class="col-md-6">
         <!-- Right box - Email ID, password, login button for login part -->
         <div class="box-right">
-            <form>
+            <form action="login.php" method="post">
             <div class="form-group">
                 <label for="email">Email ID:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter password">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary" name="submit" id="submit">Login</button>
             </form><br>
             <p>Not registered? <a href="register.php">Register</a></p>
         </div>
