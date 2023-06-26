@@ -38,7 +38,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Logo -->
-    <a class="navbar-brand" href="#"><img src="path/to/your/logo.png" alt="Logo"></a>
+    <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Logo" style='width:40px'></a>
 
     <!-- Toggler Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
