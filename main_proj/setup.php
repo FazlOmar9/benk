@@ -22,7 +22,7 @@ mysqli_select_db($conn, "ap_proj");
 $sql = "CREATE TABLE user_profile (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 account_number VARCHAR(30) NOT NULL,
-balance INT(10) NOT NULL DEFAULT 0,
+balance INT(10) NOT NULL DEFAULT 10000,
 full_name VARCHAR(50) NOT NULL,
 phone VARCHAR(30) NOT NULL,
 email VARCHAR(50) NOT NULL,
