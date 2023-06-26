@@ -71,10 +71,10 @@
                 <img src="images/lifeins.png" class="d-block w-100" alt="Image 1">
                 </div>
                 <div class="carousel-item">
-                <img src="images/lifeins.png" class="d-block w-100" alt="Image 2">
+                <img src="images/goldloan.png" class="d-block w-100" alt="Image 2">
                 </div>
                 <div class="carousel-item">
-                <img src="images/lifeins.png" class="d-block w-100" alt="Image 3">
+                <img src="images/invest.png" class="d-block w-100" alt="Image 3">
                 </div>
             </div>
             </div>

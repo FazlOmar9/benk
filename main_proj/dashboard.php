@@ -34,37 +34,7 @@ if ($result) {
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Custom CSS */
-        .custom-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .user-details {
-            width: 97%;
-            max-width: 1500px; /* Adjust the maximum width as desired */
-            background-color: #f5f5f5;
-            border-radius: 20px;
-            padding: 20px;
-        }
-        .user-details:hover {            
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .user-details table {
-            width: 40%;
-        }
-
-        .user-details th {
-            text-align: left;
-        }
-
-        .user-details td {
-            padding: 8px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <div class="custom-container">
@@ -94,6 +64,21 @@ if ($result) {
             </table>
         </div>
     </div>
+    <div class="articles-container">
+            <h2 class="font-weight-bold mb-4" style="margin-left:5px;">Articles</h2>
+            <a class="article-button" href="https://economictimes.indiatimes.com/definition/systematic-investment-plan" target="_blank">What is an SIP?</a>
+            <a class="article-button" href="https://www.investopedia.com/articles/basics/06/invest1000.asp" target="_blank">Get Started with Stocks</a>
+            <a class="article-button" href="article3.php" target="_blank">Article 3</a>
+            <a class="article-button" href="article4.php" target="_blank">Article 4</a>
+    </div>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="Benk_FAQ"
+    agent-id="ccbc25b8-34d7-455a-8208-a93981194fcc"
+    language-code="en"
+    ></df-messenger>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
