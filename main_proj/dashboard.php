@@ -35,6 +35,28 @@ if ($result) {
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="dashboard.css">
+    <style>
+        .offers-container {
+            max-width: 400px; /* Adjust the maximum width as desired */
+            background-color: #f5f5f5;
+            border-radius: 20px;
+            padding: 20px;
+            /* align-self: flex-start; Align container to the left */
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container-heading {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="custom-container">
@@ -64,12 +86,37 @@ if ($result) {
             </table>
         </div>
     </div>
-    <div class="articles-container">
-            <h2 class="font-weight-bold mb-4" style="margin-left:5px;">Articles</h2>
-            <a class="article-button" href="https://economictimes.indiatimes.com/definition/systematic-investment-plan" target="_blank">What is an SIP?</a>
-            <a class="article-button" href="https://www.investopedia.com/articles/basics/06/invest1000.asp" target="_blank">Get Started with Stocks</a>
-            <a class="article-button" href="article3.php" target="_blank">Article 3</a>
-            <a class="article-button" href="article4.php" target="_blank">Article 4</a>
+    <div class="custom-container">
+        <div class="articles-container">
+                <h2 class="font-weight-bold mb-4" style="margin-left:5px;">Articles</h2>
+                <a class="article-button" href="https://economictimes.indiatimes.com/definition/systematic-investment-plan" target="_blank">What is an SIP?</a>
+                <a class="article-button" href="https://www.investopedia.com/articles/basics/06/invest1000.asp" target="_blank">Get Started with Stocks</a>
+                <a class="article-button" href="article3.php" target="_blank">Article 3</a>
+                <a class="article-button" href="article4.php" target="_blank">Article 4</a>
+        </div>
+        <div class="offers-container">
+            <h2 class="container-heading">Bank Offers</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/invest.png" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/goldloan.png" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/lifeins.png" class="d-block w-100" alt="Image 3">
+                    </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
