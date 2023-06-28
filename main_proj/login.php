@@ -14,8 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     // Check if there is a match in the database
     if ($result->num_rows > 0) {
-    // Login successful
-    header("Location: dashboard.php?email=".urlencode($email));
+    //Create a cookie with account_number of user in it
+    $account_number = $result->fetch_assoc()['account_number'];
+    setcookie('account_number', $account_number, time() + (86400 * 30), "/");
+    header("Location: dashboard.php");
     } else {
     // Login failed
     echo "<script>window.alert('Incorrect email or password')</script>";

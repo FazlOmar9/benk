@@ -38,7 +38,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Logo -->
-    <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Logo" style='width:40px'></a>
+    <a class="navbar-brand" href="dashboard.php"><img src="images/logo.jpg" alt="Logo" style='width:40px'></a>
 
     <!-- Toggler Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -50,7 +50,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-exchange-alt"></i> Account Transfer</a>
+          <a class="nav-link" href="transfer.php"><i class="fas fa-exchange-alt"></i> Account Transfer</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="loansDropdown" role="button" data-toggle="dropdown"
@@ -92,7 +92,8 @@
           <div class="dropdown-menu" aria-labelledby="settingsDropdown">
             <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Profile</a>
             <a class="dropdown-item" href="#"><i class="fas fa-language"></i> Language</a>
-            <a class="dropdown-item" href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt"></i>
+ Logout</a>
           </div>
         </li>
         <li class="nav-item">

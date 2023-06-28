@@ -49,7 +49,7 @@
 <body>
   
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.php">B.E.N.K.</a>
+    <a class="navbar-brand" href="../main_proj"><img src="images/logo.jpg" alt="Logo" style='width:40px'></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

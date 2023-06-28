@@ -1,32 +1,27 @@
 <?php
-require_once('connection.php');
+// Check if cookie exists
+if (!isset($_COOKIE['account_number'])) {
+    header("Location: index.php");
+}
+else{
+    require_once('connection.php');
+    $account_number = $_COOKIE['account_number'];
+    $sql = "SELECT * FROM user_profile WHERE account_number='$account_number'";
 
-// Get the email from the URL
-$email = urldecode($_GET['email']);
+    $result = $conn->query($sql);
 
-// Query to retrieve user data from the database
-$query = "SELECT * FROM user_profile WHERE email = '$email'";
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $full_name = $row['full_name'];
+        $balance = $row['balance'];
+        $phone = $row['phone'];
+        $email = $row['email'];
+    } else {
+        // Login failed
+        echo "<script>window.alert('Incorrect email or password')</script>";
+    }
 
-// Execute the query
-$result = mysqli_query($conn, $query);
-
-// Check if the query was successful
-if ($result) {
-    // Fetch the row from the result set
-    $row = mysqli_fetch_assoc($result);
-
-    // Store the data in local variables
-    $full_name = $row['full_name'];
-    $account_number = $row['account_number'];
-    $balance = $row['balance'];
-    $phone = $row['phone'];
-    $email = $row['email'];
-
-    // Free the result set
-    mysqli_free_result($result);
-} else {
-    // Handle the query error
-    echo "<script>window.alert('Lmao how did you get in?')</script>";
+    $conn->close();
 }
 ?>
 <?php include('navbar2.php'); ?>
@@ -47,11 +42,6 @@ if ($result) {
             margin-bottom: 20px;
         }
 
-        .container-heading {
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
         .carousel-item img {
             max-width: 100%;
             height: auto;
@@ -61,7 +51,8 @@ if ($result) {
 <body>
     <div class="custom-container">
         <div class="user-details">
-            <h2 class="font-weight-bold mb-4">User Details</h2>
+        <h2 class="font-weight-bold mb-4">User Details</h2>
+        <hr>
             <table>
                 <tr>
                     <th>Full Name:</th>
@@ -86,16 +77,16 @@ if ($result) {
             </table>
         </div>
     </div>
-    <div class="custom-container">
+    <div class="custom-container" style="justify-content:left;">
         <div class="articles-container">
-                <h2 class="font-weight-bold mb-4" style="margin-left:5px;">Articles</h2>
+                <h2 class="font-weight-bold mb-4" style="margin-left:5px;">Articles</h2><hr>
                 <a class="article-button" href="https://economictimes.indiatimes.com/definition/systematic-investment-plan" target="_blank">What is an SIP?</a>
                 <a class="article-button" href="https://www.investopedia.com/articles/basics/06/invest1000.asp" target="_blank">Get Started with Stocks</a>
-                <a class="article-button" href="article3.php" target="_blank">Article 3</a>
-                <a class="article-button" href="article4.php" target="_blank">Article 4</a>
+                <a class="article-button" href="https://www.hdfcbank.com/personal/resources/learning-centre/save/what-is-a-fixed-deposit#:~:text=In%20a%20Fixed%20Deposit%2C%20you,are%20also%20called%20term%20deposits." target="_blank">About Fixed Deposits</a>
+                <a class="article-button" href="https://www.cibil.com/gold-loan#:~:text=Gold%20loan%20(also%20called%20loan,%2D24%20carats)%20as%20collateral." target="_blank">Dig deeper into Gold Loans</a>
         </div>
         <div class="offers-container">
-            <h2 class="container-heading">Bank Offers</h2>
+            <h2 class="font-weight-bold mb-4">Bank Offers</h2><hr>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -122,7 +113,7 @@ if ($result) {
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
     intent="WELCOME"
-    chat-title="Benk_FAQ"
+    chat-title="FAQ"
     agent-id="ccbc25b8-34d7-455a-8208-a93981194fcc"
     language-code="en"
     ></df-messenger>
