@@ -59,7 +59,7 @@
           <a class="nav-link" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="./about.php">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./register.php">Register</a>
@@ -75,8 +75,5 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   
-</body>
-</html>
-
 </body>
 </html>

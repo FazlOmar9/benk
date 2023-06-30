@@ -6,7 +6,6 @@
     border-radius: 20px;
     padding: 20px;
     align-self: flex-start;
-    /* Align container to the left */
     margin-top: 20px;
     margin-left: 23px;
     margin-bottom: 20px;
@@ -32,12 +31,6 @@
 
 .transfer-containerp {
     font-weight: bold;
-    /* margin-bottom: 20px; */
-}
-
-h2 {
-    font-weight: bold;
-    margin-bottom: 100px;
 }
 
 .transfer-button {

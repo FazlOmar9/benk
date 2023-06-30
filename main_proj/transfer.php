@@ -107,11 +107,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </td>
             </tr>
             <tr>
-                <td><button type="submit" class="transfer-button">Transfer</button></td>
+                <td style="padding-top:15px;"><button type="submit" class="transfer-button">Transfer</button></td>
             </tr>
         </table>
         </form>
     </div>
+    <script>
+        document.body.style.backgroundColor = "rgb(203, 228, 255)";
+    </script>
 </body>
 </html>
 
