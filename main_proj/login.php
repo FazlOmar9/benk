@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     } else {
     // Login failed
     echo "<script>window.alert('Incorrect email or password')</script>";
+    echo "<script>window.location.href='index.php'</script>";
     }
     // Close the database connection
     $conn->close();
